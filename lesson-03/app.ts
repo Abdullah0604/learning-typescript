@@ -36,6 +36,17 @@ function multiply(a: NumOrStr, b: NumOrStr, c: NumOrStr) {
 
   return a.toString() + b + c;
 }
+
+type PersonType = {
+  id: number;
+  name: string;
+  age: number;
+  isEducated: boolean;
+};
+function printObject(person: PersonType) {
+  console.log(person);
+}
 console.log(add(20, "Abdullah"));
 console.log(multiply(20, " Abdullah ", 30));
 console.log(multiply(20, 10, 30));
+printObject({ id: 23, name: "abd", age: 22, isEducated: true });

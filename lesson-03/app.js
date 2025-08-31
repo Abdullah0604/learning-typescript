@@ -20,7 +20,6 @@ function add(a, b) {
     }
     return a.toString() + " " + b.toString();
 }
-// type alias
 function multiply(a, b, c) {
     var isNumbers = typeof a === "number" && typeof b === "number" && typeof c === "number";
     if (isNumbers) {
@@ -28,6 +27,10 @@ function multiply(a, b, c) {
     }
     return a.toString() + b + c;
 }
+function printObject(person) {
+    console.log(person);
+}
 console.log(add(20, "Abdullah"));
 console.log(multiply(20, " Abdullah ", 30));
 console.log(multiply(20, 10, 30));
+printObject({ id: 23, name: "abd", age: 22, isEducated: true });
